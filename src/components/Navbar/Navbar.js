@@ -82,6 +82,11 @@ const useStyles = makeStyles(theme => ({
   },
   toolbarHead:{
       textTransform: "capitalize"
+  },
+  link: {
+    display: 'block',
+    width: '100%',
+    height: '100%'
   }
 }));
 
@@ -136,10 +141,10 @@ const Navbar = props => {
     <Divider/>
     <List>
         <ListItem button>
-        <Link to="/people">People</Link>
+        <Link className={classes.link} to="/people">People</Link>
         </ListItem>
         <ListItem button>
-        <Link to="/favourites">Favourties</Link>
+        <Link className={classes.link} to="/favourites">Favourties</Link>
         </ListItem>
     </List>
   </Drawer>
